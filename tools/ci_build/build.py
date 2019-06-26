@@ -146,6 +146,7 @@ Use the individual flags to only run the specified stages.
     parser.add_argument("--skip_onnx_tests", action='store_true', help="Explicitly disable all onnx related tests")
     parser.add_argument("--enable_msvc_static_runtime", action='store_true', help="Enable static linking of MSVC runtimes.")
     parser.add_argument("--enable_language_interop_ops", action='store_true', help="Enable operator implemented in language other than cpp")
+    parser.add_argument("--use_openmp", action='store_true', help="Build with OpenMP.")
     return parser.parse_args()
 
 def resolve_executable_path(command_or_path):
